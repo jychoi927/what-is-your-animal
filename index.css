@@ -145,6 +145,10 @@ span {
   margin-top: 200px;
 }
 
+.post-sns {
+  visibility: hidden;
+}
+
 
 #custom-overlay {
   position: fixed;
@@ -220,4 +224,5 @@ footer {
 }
 
 */
+
 

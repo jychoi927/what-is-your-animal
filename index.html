@@ -30,22 +30,27 @@
     </header>
 
     <div class="discription">
-        <h2>'너의얼굴은'은 딥 러닝을 사용하여</h2>
-        <h2>얼굴과 가장 닮은 동물을 찾아내는 웹 어플리케이션 입니다.</h2>
-        <h2>여러분의 얼굴이 어떤 동물과 닮았는지 궁금하신가요?</h2>
+        <h2>
+            '너의얼굴은'은 딥 러닝을 사용하여<br>
+            얼굴과 가장 닮은 동물을 찾아내는 웹 어플리케이션 입니다.<br>
+            여러분의 얼굴이 어떤 동물과 닮았는지 궁금하신가요?<br>
+        </h2>
     </div>
 
     <div class="avatarWrapper">
         <img id="avatar" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/20625/avatar-bg.png">
     </div>
 
+
     <div class="input-file-container">
-        <input class="input-file" id="my-file" type="file" onchange="loadFile(event)" />
-        <label tabindex="0" for="my-file" class="input-file-trigger">사진 찾기</label>
+        <form action="http://220.149.232.14/predict" id="post-image" method="POST" enctype="multipart/form-data">
+            <label tabindex="0" for="my-file" class="input-file-trigger">사진 찾기</label>
+            <input class="input-file" id="my-file" type="file" name="file" onchange="loadFile(event)" />
+        </form>
     </div>
 
     <div class="startBtn-container">
-        <input class="input-file" id="startBtn" type="button" onclick="loadingShow();"/>
+        <input class="input-file" id="startBtn" type="submit" form="post-image" onclick="loadingShow();" />
         <label tabindex="0" class="startBtnLabel" for="startBtn"></label>
     </div>
 
@@ -53,12 +58,15 @@
         <img id="loading-image" src="images/loading_animals.gif" />
     </div>
 
+    <div class="post-sns">
 
-
+    </div>
 
     <script src="file_upload.js"></script>
     <script src="splash.js"></script>
     <script src="loading.js"></script>
+    <script src="show_result.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 
 </body>
 
