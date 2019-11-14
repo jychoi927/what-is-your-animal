@@ -43,14 +43,14 @@
 
 
     <div class="input-file-container">
-        <form action="http://220.149.232.14/predict" id="post-image" method="POST" enctype="multipart/form-data">
+        <form id="post-image" method="POST" enctype="multipart/form-data">
             <label tabindex="0" for="my-file" class="input-file-trigger">사진 찾기</label>
             <input class="input-file" id="my-file" type="file" name="file" onchange="loadFile(event)" />
         </form>
     </div>
 
     <div class="startBtn-container">
-        <input class="input-file" id="startBtn" type="submit" form="post-image" onclick="loadingShow();" />
+        <input class="input-file" id="startBtn" type="button" onclick="postImage();" />
         <label tabindex="0" class="startBtnLabel" for="startBtn"></label>
     </div>
 
@@ -65,6 +65,7 @@
     <script src="file_upload.js"></script>
     <script src="splash.js"></script>
     <script src="loading.js"></script>
+    <script src="post_image.js"></script>
     <script src="show_result.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 
