@@ -3,12 +3,10 @@ var loadingDisplay = document.getElementById('loading');
 loadingDisplay.style.visibility = "hidden";
 function loadingShow() {
     loadingDisplay.style.visibility = "visible";
-    setTimeout(hidingShow,3000);
-    //setTimeout(show_result,3005);
+    setTimeout(hidingShow,1000);
+    setTimeout(show_result,1005);
     
-    console.log(base64result);
-    var js = {'file': base64result};
-    console.log(js);
+
     /*
     const Url = 'http://220.149.232.14/predict';
     $.ajax({
