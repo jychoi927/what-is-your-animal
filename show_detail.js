@@ -1,5 +1,9 @@
 function showDetail() {
 
+    document.querySelector('.result').style.display = "none";
+    document.querySelector('.detail').style.display = "block";
+
+
     google.charts.load('current', { packages: ['corechart', 'bar'] });
     google.charts.setOnLoadCallback(showChart);
 
@@ -23,12 +27,15 @@ function showManipulation() {
 }
 
 function showChart() {
+    var dog_prob = Math.round(Number(dog_score) * 100);
+    var cat_prob = Math.round(Number(cat_score) * 100);
+    var pig_prob = Math.round(Number(pig_score) * 100);
 
     var data = google.visualization.arrayToDataTable([
         ['string', 'Similarity(%)', { role: 'annotation' }],
-        ["", 15, 15 + '%'],
-        ["", 71, 71 + '%'],
-        ["", 3, 3 + '%'],
+        ["", dog_prob, dog_prob + '%'],
+        ["", cat_prob, cat_prob + '%'],
+        ["", pig_prob, pig_prob + '%'],
         ["", 11, 11 + '%']
     ]);
 
@@ -56,4 +63,3 @@ function showChart() {
     chart.draw(data, google.charts.Bar.convertOptions(options));
 }
 
-showDetail();

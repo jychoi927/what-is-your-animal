@@ -33,7 +33,6 @@
         <img id="avatar" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/20625/avatar-bg.png">
     </div>
 
-
     <div class="input-file-container">
         <form id="post-image" method="POST" enctype="multipart/form-data">
             <input class="input-file" id="my-file" type="file" name="file" onchange="loadFile(event)" />
@@ -42,7 +41,7 @@
     </div>
 
     <div class="startBtn-container">
-        <input class="input-file" id="startBtn" type="button" onclick=loadingShow() />
+        <input class="input-file" id="startBtn" type="button" onclick=postImage() />
         <label tabindex="0" class="startBtnLabel" for="startBtn">닮은 동물 찾기</label>
     </div>
 
@@ -50,7 +49,6 @@
             <img id="loading-image" src="images/loading_animals.gif" />
         </div>
 
-    <script src="loading.js"></script>
     <script src="file_upload.js"></script>
     <script src="post_image.js"></script>
 

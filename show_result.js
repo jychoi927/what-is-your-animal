@@ -1,11 +1,17 @@
 var discription_container = document.querySelector('.discription');
 var result_avatar_container = document.getElementById('result-avatar');
 
-function show_result() {
-
-    result_avatar_container.src = "images/result_cat.jpg";
-
+function showResult() {
+    document.querySelector('.detail').style.display = "none";
+    document.querySelector('.result').style.display = "block";
 }
 
+function getResult() {
 
-show_result();
+    var result_animal = label[0];
+    img_url = "images/result_" + result_animal + ".jpg";
+    result_avatar_container.src = img_url;
+}
+
+getResult();
+
