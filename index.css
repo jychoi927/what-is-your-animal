@@ -20,8 +20,17 @@ header {
   margin-top: 200px;
 }
 
+.result-discription {
+  display: block;
+  width: 900px;
+  height: 300px;
+  font-size: 3em;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
 .chart-discription-container, .image-discription-container, .result-discription-container {
-  display: none;
   width: 900px;
   height: 100px;
   font-size: 2em;
@@ -29,13 +38,13 @@ header {
   margin: 0 auto;
 }
 
-.avatarWrapper {
+.avatarWrapper, .result-avatarWrapper {
 	position: relative;
   margin: 0 auto;
   padding: 20px;
 	width: 600px;
 }
-.avatarWrapper img {
+.avatarWrapper img, .result-avatarWrapper img {
   display: block;
   margin: 0 auto;
   width: 50%;
@@ -43,7 +52,6 @@ header {
   border-radius: 100%;
 }
 .animals-container {
-  display: none;
   position: relative;
   height: 600px;
 }
@@ -80,7 +88,7 @@ header {
   height: 150px;
   border-radius: 100%;
 }
-.input-file-container {
+.input-file-container, .resultBtn-container, .retryBtn-container, .backBtn-container {
   position: relative;
   width: 225px;
   height: 120px;
@@ -97,15 +105,23 @@ header {
   cursor: pointer;
 }
 
-.resultBtn-container, .retryBtn-container, .backBtn-container {
+.startBtn-container {
   display: none;
   position: relative;
   width: 225px;
-  height: 120px;
   margin: 0 auto;
   text-align: center;
 }
 
+.startBtnLabel {
+  display: block;
+  background: #34495E;
+  color: #39D2B4;
+  font-size: 2.1em;
+  transition: all .4s;
+  padding: 14px 45px;
+  cursor: pointer;
+}
 
 /*
 .input-file:hover + .input-file-trigger,
@@ -124,23 +140,7 @@ header {
   cursor: pointer;
 }
 
-.startBtn-container {
-  display: none;
-  position: relative;
-  width: 225px;
-  margin: 0 auto;
-  text-align: center;
-}
 
-.startBtnLabel {
-  display: none;
-  background: #34495E;
-  color: #39D2B4;
-  font-size: 2.1em;
-  transition: all .4s;
-  padding: 14px 45px;
-  cursor: pointer;
-}
 
 
 #loading {
@@ -149,7 +149,8 @@ header {
 	top: 0;
   left: 0;
 	position: fixed;
-	display: block;
+  display: block;
+  visibility: hidden;
 	opacity: 0.8;
 	background: white;
 	z-index: 99;
@@ -286,5 +287,4 @@ footer {
 }
 
 */
-
 

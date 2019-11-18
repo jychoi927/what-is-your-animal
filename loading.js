@@ -1,12 +1,11 @@
 
 var loadingDisplay = document.getElementById('loading');
-loadingDisplay.style.visibility = "hidden";
+//loadingDisplay.style.visibility = "hidden";
 function loadingShow() {
-    loadingDisplay.style.visibility = "visible";
-    setTimeout(hidingShow,1000);
-    setTimeout(show_result,1005);
-    
 
+    loadingDisplay.style.visibility = "visible";
+    setTimeout(hidingShow,2000);
+    setTimeout(movePage,2002);
     /*
     const Url = 'http://220.149.232.14/predict';
     $.ajax({
@@ -27,6 +26,7 @@ function hidingShow(){
     loadingDisplay.style.visibility = "hidden";
 }
 
-function sns(){
-
+function movePage(){
+    location.href="result.html";
 }
+

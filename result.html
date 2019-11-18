@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>너의얼굴은</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                <a href="#">
+                    <img class="logo" src="images/logo.png" alt="LOGO" width="70" height="70">
+                </a>
+                <span>너 의 얼 굴 은</span>
+            </h1>
+        </div>
+    </header>
+
+    <div class="result-discription">
+        <h2>가장 닮은 동물은</h2>
+    </div>
+
+    <div class="result-avatarWrapper">
+        <img id="result-avatar">
+    </div>
+
+    <div class="resultBtn-container">
+        <input class="input-file" id="resultBtn" type="button" onclick="location.href='detail.html'" />
+        <label tabindex="0" for="resultBtn" class="input-file-trigger">결과분석</label>
+    </div>
+
+    <div class="retryBtn-container">
+        <input class="input-file" id="retryBtn" type="button" onclick="history.back()" />
+        <label tabindex="0" class="startBtnLabel" for="retryBtn">다시하기</label>
+    </div>
+
+
+    <script src="post_image.js"></script>
+    <script src="show_result.js"></script>
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+</body>

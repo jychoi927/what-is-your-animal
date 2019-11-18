@@ -4,6 +4,7 @@
 <head>
     <title>너의얼굴은</title>
     <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="2; URL=main.html" />
     <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="index.css" />
     <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
@@ -19,101 +20,9 @@
         </div>
     </div>
 
-    <header>
-        <div class="container">
-            <h1>
-                <a href="#">
-                    <img class="logo" src="images/logo.png" alt="LOGO" width="70" height="70">
-                </a>
-                <span>너 의 얼 굴 은</span>
-            </h1>
-        </div>
-    </header>
-
-    <div class="discription">
-        <h2>
-            '너의얼굴은'은 딥 러닝을 사용하여<br>
-            얼굴과 가장 닮은 동물을 찾아내는 웹 어플리케이션 입니다.<br>
-            여러분의 얼굴이 어떤 동물과 닮았는지 궁금하신가요?<br>
-        </h2>
-    </div>
-
-    <div class="avatarWrapper">
-        <img id="avatar" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/20625/avatar-bg.png">
-    </div>
 
 
-    <div class="input-file-container">
-        <form id="post-image" method="POST" enctype="multipart/form-data">
-            <input class="input-file" id="my-file" type="file" name="file" onchange="loadFile(event)" />
-            <label tabindex="0" for="my-file" class="input-file-trigger">사진 찾기</label>
-        </form>
-    </div>
-
-    <div class="startBtn-container">
-        <input class="input-file" id="startBtn" type="button" onclick="loadingShow()" />
-        <label tabindex="0" class="startBtnLabel" for="startBtn">닮은 동물 찾기</label>
-    </div>
-
-    <div id="loading">
-        <img id="loading-image" src="images/loading_animals.gif" />
-    </div>
-
-    <div class="resultBtn-container">
-        <input class="input-file" id="resultBtn" type="button" onclick="showDetail()" />
-        <label tabindex="0" for="resultBtn" class="input-file-trigger">결과분석</label>
-    </div>
-
-    <div class="retryBtn-container">
-        <input class="input-file" id="retryBtn" type="button" onclick="retry()" />
-        <label tabindex="0" class="startBtnLabel" for="retryBtn">다시하기</label>
-    </div>
-
-    <div class="chart-discription-container">
-        <h2>동물 닮은꼴 유사도</h2>
-    </div>
-
-    <div class="animals-container">
-        <div class="animals-images">
-            <img src="images/result_dog.jpg">
-            <img src="images/result_cat.jpg">
-            <img src="images/result_pig.jpg">
-            <img src="images/result_bear.jpg">
-        </div>
-
-        <div class="chart">
-
-        </div>
-    </div>
-
-    <div class="image-discription-container">
-        <h2>사진과 동물 합성된 이미지</h2>
-    </div>
-
-    <div class="manipulated-images-container">
-        <img id='img1'>
-        <img id='img2'>
-        <img id='img3'>
-        <img id='img4'>
-    </div>
-
-    <div class="result-discription-container">
-        <h2></h2>
-    </div>
-
-    <div class="backBtn-container">
-            <input class="input-file" id="backBtn" type="button" onclick="show_result_from_detail()" />
-            <label tabindex="0" for="backBtn" class="input-file-trigger">뒤로가기</label>
-        </div>
-
-    <script src="file_upload.js"></script>
     <script src="splash.js"></script>
-    <script src="loading.js"></script>
-    <script src="post_image.js"></script>
-    <script src="show_result.js"></script>
-    <script src="retry.js"></script>
-    <script src="show_detail.js"></script>
-
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 
 </body>
