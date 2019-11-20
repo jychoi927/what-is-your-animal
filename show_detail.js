@@ -1,3 +1,4 @@
+
 function showDetail() {
 
     document.querySelector('.result').style.display = "none";
@@ -19,11 +20,10 @@ function showDetail() {
 }
 
 function showManipulation() {
-    document.getElementById("img1").src = 'images/01.png';
-    document.getElementById("img2").src = 'images/02.png';
-    document.getElementById("img3").src = 'images/03.png';
-    document.getElementById("img4").src = 'images/04.png';
-
+    document.getElementById("img1").src = 'cache/human+animal_img0.png?nocache='+Math.floor(Math.random() * 1000);
+    document.getElementById("img2").src = 'cache/human+animal_img1.png?nocache='+Math.floor(Math.random() * 1000);
+    document.getElementById("img3").src = 'cache/human+animal_img2.png?nocache='+Math.floor(Math.random() * 1000);
+    document.getElementById("img4").src = 'cache/human+animal_img3.png?nocache='+Math.floor(Math.random() * 1000);    
 }
 
 function showChart() {
@@ -62,4 +62,3 @@ function showChart() {
 
     chart.draw(data, google.charts.Bar.convertOptions(options));
 }
-
