@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rendering JSON</title>
+        <script type="text/javascript"> var label = {{label|tojson}}; console.log(label[0]);</script>
+        <script type="text/javascript"> var cat_score = {{cat_score|tojson}}; console.log(cat_score);</script>
+        <script type="text/javascript"> var dog_score = {{dog_score|tojson}}; console.log(dog_score);</script>
+        <script type="text/javascript"> var pig_score = {{pig_score|tojson}}; console.log(pig_score);</script>
+    </head>
+    <body>
+        <h1>
+            <script type="text/javascript"> document.write(label) </script>
+            <script type="text/javascript"> document.write(cat_score) </script>
+            <script type="text/javascript"> document.write(dog_score) </script>
+            <script type="text/javascript"> document.write(pig_score) </script>
+        </h1>
+    </body>
+</html>

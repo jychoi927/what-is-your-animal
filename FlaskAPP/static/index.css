@@ -1,0 +1,293 @@
+/*
+body{
+    background-color: #e6f2ff;
+}
+*/
+/*
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #282828;
+}
+*/
+.discription {
+  display: block;
+  width: 900px;
+  height: 400px;
+  font-size: 1.8em;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+.result-discription {
+  display: block;
+  width: 900px;
+  height: 300px;
+  font-size: 3em;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+.chart-discription-container, .image-discription-container, .result-discription-container {
+  width: 900px;
+  height: 100px;
+  font-size: 2em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.avatarWrapper, .result-avatarWrapper {
+	position: relative;
+  margin: 0 auto;
+  padding: 20px;
+	width: 600px;
+}
+.avatarWrapper img, .result-avatarWrapper img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+  border-radius: 100%;
+}
+.animals-container {
+  position: relative;
+  height: 600px;
+}
+
+.animals-images {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 10%;
+  height: 550px;
+}
+
+.animals-images img {
+  padding: 25px;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+
+.chart {
+  position: absolute;
+  right: 0;
+  width: 85%;
+  height: 550px;
+}
+
+.manipulated-images-container {
+  width: 100%;
+  text-align: center;
+}
+.manipulated-images-container img {
+  padding: 25px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+.input-file-container, .resultBtn-container, .retryBtn-container, .backBtn-container {
+  position: relative;
+  width: 225px;
+  height: 120px;
+  margin: 0 auto;
+  text-align: center;
+} 
+
+.input-file-trigger {
+  display: block;
+  padding: 14px 45px;
+  background: #39D2B4;
+  color: #fff;
+  font-size: 2em;
+  transition: all .4s;
+  cursor: pointer;
+}
+
+.startBtn-container {
+  display: none;
+  position: relative;
+  width: 225px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.startBtnLabel {
+  display: block;
+  background: #34495E;
+  color: #39D2B4;
+  font-size: 2.1em;
+  transition: all .4s;
+  padding: 14px 45px;
+  cursor: pointer;
+}
+
+.detail {
+  display: none;
+}
+
+/*
+.input-file:hover + .input-file-trigger,
+.input-file:focus + .input-file-trigger,
+.input-file-trigger:hover,
+.input-file-trigger:focus {
+  background: #34495E;
+  color: #39D2B4;
+}
+*/
+.input-file {
+  top: 0; left: 0;
+  width: 225px;
+  opacity: 0;
+  padding: 14px 0;
+  cursor: pointer;
+}
+
+#loading {
+	width: 100%;
+	height: 100%;
+	top: 0;
+  left: 0;
+	position: fixed;
+  display: block;
+  visibility: hidden;
+	opacity: 0.8;
+	background: white;
+	z-index: 99;
+	text-align: center;
+}
+
+#loading > img {
+  position: absolute;
+  width: 200px;
+	height: 200px;
+	top: 50%;
+  left: 40%;
+  margin: 0 auto;
+	z-index: 100;
+}
+
+#loading-image {
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nanum Pen Script', cursive;
+  background-color: #f8f8f8;
+
+}
+.logo_title {
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ffffff;
+}
+.container h1 {
+  margin: 0;
+  padding: 0;
+  height: 90px;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+span {
+  width: 100%;
+  font-size: 2em;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+
+
+.post-sns {
+  visibility: hidden;
+}
+
+
+#custom-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100000;
+  width:100%;
+  background-color: #002a3e;
+}
+
+.flb {
+  background-color: #ffffff;
+  height:100%;
+  width:100%;
+  animation: pulse 1s linear forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Aligner-item {
+  max-width: 50%;
+}
+.Aligner-item--top {
+  align-self: flex-start;
+}
+.Aligner-item--bottom {
+  align-self: flex-end;
+}
+#custom-overlay img {
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  height: auto;
+  animation: animation 2000ms linear infinite both;
+  animation-delay: 1s;
+}
+
+@keyframes pulse {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+/*
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#mainNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 16px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background: #ffffff;
+  transition: background 0.4s;
+}
+
+footer {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  background: black;
+  color: pink;
+}
+
+*/
+
+
